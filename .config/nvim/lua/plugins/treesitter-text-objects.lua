@@ -1,6 +1,7 @@
 return {
 	{
 		"nvim-treesitter/nvim-treesitter-textobjects",
+    commit = "55e13ca",
 		lazy = true,
 		config = function()
 			require("nvim-treesitter.configs").setup({
