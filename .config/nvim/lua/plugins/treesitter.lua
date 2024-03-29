@@ -23,6 +23,8 @@ return {
 					"go",
           "python",
           "toml",
+          "vue",
+          "rust",
 				},
 				sync_install = false,
 				highlight = { enable = true },
