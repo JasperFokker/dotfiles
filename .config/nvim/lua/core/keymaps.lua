@@ -18,8 +18,8 @@ vim.opt.cursorline = true
 vim.keymap.set("n", "<C-n>", "<Cmd>Neotree reveal float<CR>", {})
 vim.keymap.set("n", "<leader>bf", ":Neotree buffers reveal float<CR>", {})
 
-vim.keymap.set("n", "<C-S-j>", ":m .+1<CR>==", {})
-vim.keymap.set("n", "<C-S-k>", ":m .-2<CR>==", {})
+vim.keymap.set("n", "<A-j>", ":m .+1<CR>==", {})
+vim.keymap.set("n", "<A-k>", ":m .-2<CR>==", {})
 vim.keymap.set("i", "<C-S-j>", "<Esc>:m .+1<CR>==gi", {})
 vim.keymap.set("i", "<C-S-k>", "<Esc>:m .-2<CR>==gi", {})
 vim.keymap.set("v", "<C-S-k>", ":m '<-2<CR>gv=gv", {})

@@ -14,17 +14,17 @@ return {
 					-- null_ls.builtins.diagnostics.phpcs.with({
 					--  		extra_args = { "--standard=Symfony" },
 					-- }),
-					-- null_ls.builtins.diagnostics.phpstan,
+				  -- null_ls.builtins.diagnostics.phpstan,
 
 					-- Javascript
-					null_ls.builtins.diagnostics.eslint.with({
-						diagnostics_format = "[eslint] #{m}\n(#{c})",
-
-						-- only enable eslint if root has .eslintrc.js
-						condition = function(utils)
-							return utils.root_has_file(".eslintrc.js") -- change file extension if you use something else
-						end,
-					}),
+					-- null_ls.builtins.diagnostics.eslint.with({
+					-- 	diagnostics_format = "[eslint] #{m}\n(#{c})",
+					--
+					-- 	-- only enable eslint if root has .eslintrc.js
+					-- 	condition = function(utils)
+					-- 		return utils.root_has_file(".eslintrc.js") -- change file extension if you use something else
+					-- 	end,
+					-- }),
 				},
 			})
 
