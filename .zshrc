@@ -10,7 +10,10 @@ export NVM_DIR="$HOME/.nvm"
 export HOMEBREW_NO_AUTO_UPDATE=1
 
 alias dr='$(git rev-parse --show-toplevel)/vendor/bin/drush'
+alias fetch='hyfetch -b fastfetch'
 
 eval "$(starship init zsh)"
 
 eval "$(zoxide init zsh)"
+
+export PATH="$HOME/bin:$PATH"

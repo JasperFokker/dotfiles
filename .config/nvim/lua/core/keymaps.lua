@@ -15,6 +15,8 @@ vim.opt.relativenumber = true
 vim.opt.scrolloff = 999
 vim.opt.cursorline = true
 
+vim.api.nvim_set_hl(0, "Normal", { bg = "none" }) vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
+
 vim.keymap.set("n", "<C-n>", "<Cmd>Neotree reveal float<CR>", {})
 vim.keymap.set("n", "<leader>bf", ":Neotree buffers reveal float<CR>", {})
 
