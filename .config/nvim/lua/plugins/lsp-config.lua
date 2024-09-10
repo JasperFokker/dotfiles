@@ -9,7 +9,7 @@ return {
     "williamboman/mason-lspconfig.nvim",
     config = function()
       require("mason-lspconfig").setup({
-        ensure_installed = { "lua_ls", "intelephense", "tsserver", "html", "yamlls", "tailwindcss", "volar", "pyright", "cssls" }
+        ensure_installed = { "lua_ls", "phpactor", "tsserver", "html", "yamlls", "tailwindcss", "volar", "pyright", "cssls" }
       })
     end
   },
@@ -21,7 +21,7 @@ return {
       lspconfig.lua_ls.setup({
         capabities = capabilities
       })
-      lspconfig.intelephense.setup({
+      lspconfig.phpactor.setup({
         capabities = capabilities
       })
       lspconfig.tsserver.setup({

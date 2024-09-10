@@ -1,5 +1,6 @@
 export EDITOR=nvim
 export VISUAL="$EDITOR"
+export TERM=xterm-256color
 
 export PATH="$HOME/.symfony5/bin:$PATH"
 
