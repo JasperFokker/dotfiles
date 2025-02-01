@@ -12,9 +12,23 @@ export HOMEBREW_NO_AUTO_UPDATE=1
 
 alias dr='$(git rev-parse --show-toplevel)/vendor/bin/drush'
 alias fetch='hyfetch -b fastfetch'
+alias what="compgen -c | sort -u | fzf --height 40% --reverse | xargs -I {} curl cheat.sh/{}"
 
 eval "$(starship init zsh)"
 
 eval "$(zoxide init zsh)"
 
+eval $(thefuck --alias)
+
 export PATH="$HOME/bin:$PATH"
+
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+meow | lolcat
+
+# Created by `pipx` on 2024-10-24 07:44:15
+export PATH="$PATH:/home/jasper/.local/bin"
+
+# Hardware video encoding api driver
+export LIBVA_DRIVER_NAME=nvidia
