@@ -14,8 +14,8 @@ return {
                     return require("codecompanion.adapters").extend("gemini", {
                         name = "gem",
                         env = {
-                            api_key = "AIzaSyAWZDE2soMIyPYhnb63CCZoYELhtTzdT_Q",
-                            model = "gemini-1.5-flash",
+                            api_key = "",
+                            model = "",
                         },
                     })
                 end,
